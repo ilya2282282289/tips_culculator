@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="language">
+            <button id="eng">Eng</button>
+            <button id="rus">Рус</button>
+        </div>
+        <button id="theme-toggle">Темная</button>
+        <a href="about.html">О проекте</a>
+    </header>
+
+    <main>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="calc-tips-box">
+                        <h3 id="name-culc">Калькулятор чаевых</h3>
+                         <form id="calc-tips">
+                            <label style="position:fixed; top:10px; right:10px; z-index:20; color:blueviolet; padding:5px; border-radius:4px;">
+                                <input type="checkbox" id="toggle-animation" />
+                            </label>
+                            <label for="total-bill">
+                                <p id="sum-chet">Сумма по счету</p>
+                                <input id="total-bill" type="number" name="total-bill" min="0" required placeholder="0"/>
+                            </label>
+                            <label for="quality-service">
+                                <p id="quality-service-text">Качество обслуживания</p>
+                                <select name="select" id="quality-service">
+                                    <option value="0.2" id="quality-gread">Отличное (20%)</option>
+                                    <option value="0.1" id="quality-good">Хорошее (10%)</option>
+                                    <option value="0.05" id="quality-normal">Нормальное (5%)</option>
+                        </select>
+                        <label for="qty-people">
+                            <p id="qty-people-text">Количество человек</p>
+                            <input id="qty-people" type="number" name="qty-people" required placeholder="0">
+                        </label>
+                        <div >
+                            <button type="submit" id="submit-text">Посчитать</button>
+                            <button type="reset" id="reset-text">Сбросить</button>
+                        </div>
+                    </form>
+                    
+                    <div>
+                        <p><span id="tips-text">Чаевые: </span><span class="tea">25 Р</span><span id="ench-one-text1"> (с каждого)</span></p>
+                        <p><span id="total-text1">Всего: </span><span class="total">275 Р</span><span id="ench-one-text2"> (с каждого)</span></p>
+                        <p><span id="total-text2">Итого: </span><span class="total1">27 Р</span></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <h2 id="flip-card-back-h2">Спасибо что посетили наш ресторан</h2>
+                    <p id="flip-card-back-p">Приходите ещё</p>
+                </div>
+            </div>
+        </div>
+    
+    <div id="float-area"></div>
+
+    <ul class="notifications"></ul>
+    </main>
+    
+
+  <script src="./script.js"></script> 
+</body>
+</html>
